@@ -1,0 +1,15 @@
+name: SecondPipe
+trigger:
+    - none
+resources: 
+   pipelines:
+     - pipeline: previous-pipeline-trigger
+       source: ybsgit.Trigger-Pipeline-From-Another-Pipeline
+       project: Trigger-Pipeline-From-Another-Pipeline
+       trigger: true
+
+pool:
+  vmImage: Ubuntu-latest 
+
+steps:
+  - script: echo This pipeline was set to be triggered after first pipeline completes.
