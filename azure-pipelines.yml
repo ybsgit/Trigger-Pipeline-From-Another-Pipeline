@@ -3,7 +3,7 @@ trigger:
     - none
 resources: 
    pipelines:
-     - pipeline: previous-pipeline-trigger
+     - pipeline: FirstPipe
        source: ybsgit.Trigger-Pipeline-From-Another-Pipeline
        project: Trigger-Pipeline-From-Another-Pipeline
        trigger: true
