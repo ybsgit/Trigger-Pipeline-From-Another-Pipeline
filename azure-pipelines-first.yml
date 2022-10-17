@@ -1,0 +1,9 @@
+name: FirstPipe
+trigger: 
+   - main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps: 
+  - script: echo "This is the first pipeline that will run" 
